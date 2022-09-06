@@ -1,1 +1,57 @@
 @charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+} 
+
+:roots {
+    --color1: #021F59;
+    --color2: #30478C;
+    --color3: #7472A6;
+}
+
+body, html {
+    background-color: #7472A6;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.363);
+}
+
+#login > div#imagem  {
+    display: block;
+    background-image: url(../image/image_login_proj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 200px;
+}
+
+section#login >  div#formulario {
+    display: block;    
+    padding: 10px;
+     
+}
